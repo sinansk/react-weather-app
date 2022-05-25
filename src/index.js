@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "./context/ThemeContext";
-import { WeatherProvider } from "./context/WeatherContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
