@@ -17,7 +17,6 @@ function Detail({ location }) {
       minute: "2-digit",
     });
     setSunrise(newSunrise);
-    console.log(newSunrise);
   };
   const convertSunset = () => {
     const timeStamp = weather.current.sunset * 1000; ///milisaniye ile çarpıyoruz//
@@ -28,7 +27,6 @@ function Detail({ location }) {
       minute: "2-digit",
     });
     setSunset(newSunset);
-    console.log(newSunset);
   };
   const convertTime = () => {
     const timeStamp = weather.current.dt * 1000; ///milisaniye ile çarpıyoruz//
@@ -39,7 +37,6 @@ function Detail({ location }) {
       minute: "2-digit",
     });
     setTime(newTime);
-    console.log(newTime);
   };
   useEffect(() => {
     convertSunrise();

@@ -7,8 +7,6 @@ function SummaryCards({userLang}) {
     const {weather} = useWeather()
     useEffect(() => {
         if (weather) {
-        console.log(weather.daily)
-        console.log(weather.daily[0].weather[0].icon)
         }
       }, [weather])
      

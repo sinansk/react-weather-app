@@ -9,7 +9,6 @@ function SummaryCard({temp, description, icon, dt, userLang }) {
         //alttaki apı undefined yazınca default olarak locale timezone göre yazar///
         let newDay = date.toLocaleDateString(userLang, {weekday: "long"});
         setWeeekday(newDay)
-        console.log(newDay)
     }
 
     useEffect(() => {
