@@ -32,7 +32,7 @@ function Header({ location, setLocation, setIsloaded, userLang }) {
     console.log(q);
     let API = process.env.REACT_APP_API_KEY;
     let searchURL =
-      "http://api.openweathermap.org/geo/1.0/direct?q=" + q + "&appid=" + API;
+      "https://api.openweathermap.org/geo/1.0/direct?q=" + q + "&appid=" + API;
     const response = await axios(searchURL);
     setLocation({
       lat: response.data[0].lat,
