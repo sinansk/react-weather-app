@@ -12,7 +12,7 @@ function SummaryCards({userLang}) {
      
     return (
         <div>   
-            <ul className="flex flex-col sm:grid sm:grid-cols-4 lg:grid-cols-8 gap-1 sm:gap-2">
+            <ul className="flex flex-col sm:grid sm:grid-cols-4 lg:grid-cols-8 gap-1 sm:gap-2 sm:h-full">
                 {weather ? weather.daily.map((day, index) => (
                 <SummaryCard  
                     key={index}

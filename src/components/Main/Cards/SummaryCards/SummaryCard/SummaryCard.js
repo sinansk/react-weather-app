@@ -16,8 +16,8 @@ function SummaryCard({temp, description, icon, dt, userLang }) {
     }, [weekday])
 
     return (
-        <div className="shadow-md shadow-slate-900/50 rounded dark:bg-slate-700 bg-cyan-100 text-slate-700 dark:text-slate-100 flex sm:flex-col sm:flex-1 items-center sm:justify-center sm:text-center">
-            <div className="inline-block w-1/4">
+        <div className="shadow-md shadow-slate-900/50 rounded dark:bg-slate-700 bg-cyan-100 text-slate-700 dark:text-slate-100 flex sm:flex-col sm:flex-1 items-center sm:justify-evenly sm:text-center">
+            <div className="inline-block w-1/4 h-auto sm:w-1/2">
             <img className="" src={require(`../../../assets/${icon}.svg`)} alt="weathericon"/>
             </div>
             <div className="inline-block">
